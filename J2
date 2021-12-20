@@ -1,0 +1,35 @@
+interface iShape03
+{
+	public void show();
+	public int area();
+}
+interface iColor extends iShape03
+{ 
+	public void setColor(String str);
+	public void showColor();
+	}
+class CWin implements iColor
+{
+	protected int width;
+	protected int height;
+	protected int String color;
+	public CWin(int w,int h,String str) {
+	width=w;
+	height=h;
+	color=str;
+}
+public void show() {
+	System.out.println("color="+str);
+	System.out.println("width="+w);
+	System.out.println("height="+h);
+	System.out.println("area="+width*height);
+}
+
+public class J2
+{
+   public static void main(String args[])
+   {
+      CWin03 win=new CWin03(5,7,"Green");
+      win.show();              
+   }
+}
